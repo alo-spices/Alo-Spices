@@ -1,6 +1,5 @@
 <!-- ================= TOP HEADER ================= -->
-
-<div class="top-header d-none d-lg-block">
+<div class="top-header d-none d-lg-block" [class.top-header-hidden]="isScrolled">
 
     <div class="container-fluid">
 
@@ -45,7 +44,7 @@
 
 <!-- ================= NAVBAR ================= -->
 
-<header class="custom-navbar">
+<header class="custom-navbar" [class.scrolled]="isScrolled">
 
     <nav class="navbar navbar-expand-lg">
 

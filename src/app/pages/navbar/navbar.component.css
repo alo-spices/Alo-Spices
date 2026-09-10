@@ -625,3 +625,248 @@
 .order-btn:focus-visible {
     animation: none;
 }
+
+/* =========================================================
+   PREMIUM SCROLL NAVBAR
+   ========================================================= */
+
+/* ================= TOP HEADER ================= */
+
+.top-header {
+    position: relative;
+    z-index: 1001;
+
+    background: var(--primary-dark);
+    padding: 10px 0;
+
+    color: white;
+    font-size: 14px;
+
+    max-height: 50px;
+    opacity: 1;
+
+    overflow: hidden;
+
+    transition:
+        max-height 0.45s ease,
+        opacity 0.35s ease,
+        padding 0.45s ease,
+        transform 0.45s ease;
+}
+
+
+/* Hide top bar after scrolling */
+
+.top-header.top-header-hidden {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+
+/* ================= NAVBAR ================= */
+
+.custom-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: var(--card-bg);
+
+    box-shadow:
+        0 4px 20px var(--shadow-light);
+
+    transition:
+        background 0.45s ease,
+        box-shadow 0.45s ease,
+        backdrop-filter 0.45s ease,
+        transform 0.45s ease;
+}
+
+
+/* ================= NORMAL NAVBAR ================= */
+
+.custom-navbar .navbar {
+    min-height: 90px;
+
+    transition:
+        min-height 0.45s ease,
+        padding 0.45s ease;
+}
+
+
+/* ================= SCROLLED NAVBAR ================= */
+
+.custom-navbar.scrolled {
+    background: rgba(255, 255, 255, 0.82);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.10),
+        0 2px 8px rgba(166, 61, 34, 0.08);
+}
+
+
+/* Compact navbar */
+
+.custom-navbar.scrolled .navbar {
+    min-height: 68px;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo-icon img {
+    transition:
+        width 0.45s ease,
+        height 0.45s ease,
+        transform 0.45s ease,
+        filter 0.45s ease;
+}
+
+
+/* Normal */
+
+.custom-navbar:not(.scrolled) .logo-icon img {
+    transform: scale(1);
+}
+
+
+/* Scrolled */
+
+.custom-navbar.scrolled .logo-icon img {
+    transform: scale(0.82);
+
+    filter:
+        drop-shadow(0 3px 8px rgba(166, 61, 34, 0.18));
+}
+
+
+/* ================= NAV LINKS ================= */
+
+.custom-navbar .nav-link {
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease,
+        padding 0.35s ease;
+}
+
+
+/* Slightly compact links */
+
+.custom-navbar.scrolled .nav-link {
+    transform: translateY(-1px);
+}
+
+
+/* ================= NAV ACTIONS ================= */
+
+.custom-navbar .nav-actions {
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease;
+}
+
+
+/* ================= DISTRIBUTOR BUTTON ================= */
+
+.custom-navbar .order-btn {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease,
+        padding 0.35s ease;
+}
+
+
+/* Scrolled button slightly compact */
+
+.custom-navbar.scrolled .order-btn {
+    transform: scale(0.94);
+}
+
+
+/* Hover should override scale */
+
+.custom-navbar.scrolled .order-btn:hover {
+    transform: scale(0.98) translateY(-4px);
+}
+
+
+/* ================= NAVBAR ENTER ANIMATION ================= */
+
+@keyframes navbarSlideDown {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+.custom-navbar {
+    animation: navbarSlideDown 0.5s ease;
+}
+
+
+/* ================= GLASS HIGHLIGHT ================= */
+
+.custom-navbar.scrolled::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 1px;
+
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(166, 61, 34, 0.35),
+            rgba(216, 196, 154, 0.65),
+            rgba(166, 61, 34, 0.35),
+            transparent);
+
+    opacity: 1;
+
+    transition: opacity 0.4s ease;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 991px) {
+
+    .custom-navbar.scrolled {
+        background: rgba(255, 255, 255, 0.96);
+
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    .custom-navbar.scrolled .navbar {
+        min-height: 70px;
+    }
+
+    .custom-navbar.scrolled .logo-icon img {
+        transform: scale(0.9);
+    }
+
+    .custom-navbar.scrolled .order-btn {
+        transform: none;
+    }
+
+}

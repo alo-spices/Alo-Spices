@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 declare var bootstrap: any;
 @Component({
@@ -14,6 +14,12 @@ export class NavbarComponent {
   }
   @ViewChild('navbarCollapse')
   navbarCollapse!: ElementRef;
+  isScrolled = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    this.isScrolled = window.scrollY > 50;
+  }
 
   isEmployeeMenuOpen = false;
 
