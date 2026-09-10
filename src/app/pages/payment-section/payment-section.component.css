@@ -1,0 +1,452 @@
+/* ================= PAGE ================= */
+
+.payment-page {
+    padding: 24px;
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+.payment-header {
+    background: white;
+    border-radius: 28px;
+    padding: 24px 28px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    gap: 20px;
+}
+
+.shop-details {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.shop-icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 24px;
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.title-row h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.shop-details p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+/* ================= BADGE ================= */
+
+.visit-badge {
+    background: rgba(46, 125, 50, 0.12);
+    color: var(--success-color);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ================= BUTTON ================= */
+
+.history-btn {
+    height: 54px;
+    border: none;
+    border-radius: 16px;
+    padding: 0 22px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ================= SUMMARY CARD ================= */
+
+.summary-card {
+    background: white;
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 100%;
+}
+
+.summary-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.red {
+    background: linear-gradient(135deg, #D32F2F, #ef5350);
+}
+
+.green {
+    background: linear-gradient(135deg, #2E7D32, #43A047);
+}
+
+.gold {
+    background: linear-gradient(135deg, #ED6C02, #ff9800);
+}
+
+.orange {
+    background: linear-gradient(135deg, #A63D22, #C45A3A);
+}
+
+.summary-card h3 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.summary-card p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+/* ================= COMMON CARD ================= */
+
+.payment-card {
+    background: white;
+    border-radius: 28px;
+    padding: 28px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+}
+
+.card-header-custom {
+    margin-bottom: 28px;
+}
+
+.card-header-custom h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-header-custom p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+/* ================= QUICK AMOUNT ================= */
+
+.quick-amount-section {
+    margin-bottom: 32px;
+}
+
+.quick-amount-section label {
+    display: block;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.quick-amount-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.quick-amount-grid button {
+    height: 58px;
+    border-radius: 18px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.quick-amount-grid button.active,
+.quick-amount-grid button:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* ================= FORM ================= */
+
+.payment-form label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.payment-form input,
+.payment-form select,
+.payment-form textarea {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 16px;
+    outline: none;
+}
+
+.payment-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+/* ================= AMOUNT INPUT ================= */
+
+.amount-input {
+    height: 62px;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: white;
+}
+
+.amount-input span {
+    width: 70px;
+    height: 100%;
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.amount-input input {
+    border: none;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* ================= UPLOAD ================= */
+
+.upload-section {
+    margin-top: 32px;
+}
+
+.upload-box {
+    border: 2px dashed var(--border-color);
+    border-radius: 24px;
+    padding: 50px 30px;
+    text-align: center;
+    background: var(--bg-color);
+}
+
+.upload-box i {
+    font-size: 54px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.upload-box h4 {
+    margin-bottom: 12px;
+}
+
+.upload-box p {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+.upload-box button {
+    height: 52px;
+    padding: 0 24px;
+    border-radius: 16px;
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+/* ================= SUMMARY ================= */
+
+.summary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.summary-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary-row span {
+    color: var(--text-secondary);
+}
+
+.summary-row h5 {
+    margin: 0;
+}
+
+.total-row {
+    padding-top: 22px;
+    border-top: 1px solid var(--border-color);
+}
+
+.total-row h3 {
+    color: var(--primary-color);
+    font-size: 34px;
+}
+
+.green-text {
+    color: var(--success-color);
+}
+
+/* ================= RECENT PAYMENTS ================= */
+
+.recent-payment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.recent-payment-item {
+    background: var(--bg-color);
+    border-radius: 20px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recent-payment-item h4 {
+    margin-bottom: 6px;
+}
+
+.recent-payment-item p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.recent-payment-item span {
+    color: var(--text-secondary);
+}
+
+/* ================= ACTIONS ================= */
+
+.save-btn,
+.draft-btn {
+    width: 100%;
+    height: 58px;
+    border-radius: 18px;
+    border: none;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.save-btn {
+    background: linear-gradient(135deg,
+            #2E7D32,
+            #43A047);
+    color: white;
+}
+
+.draft-btn {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 991px) {
+
+    .payment-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .history-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 767px) {
+
+    .payment-page {
+        padding: 16px;
+    }
+
+    .payment-header {
+        padding: 22px;
+    }
+
+    .shop-icon {
+        width: 62px;
+        height: 62px;
+        font-size: 24px;
+    }
+
+    .title-row h2 {
+        font-size: 24px;
+    }
+
+    .summary-card {
+        padding: 20px;
+    }
+
+    .summary-card h3 {
+        font-size: 24px;
+    }
+
+    .payment-card {
+        padding: 22px;
+    }
+
+    .quick-amount-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .upload-box {
+        padding: 40px 20px;
+    }
+
+}
+
+@media(max-width: 480px) {
+
+    .shop-details {
+        align-items: flex-start;
+    }
+
+    .title-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quick-amount-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

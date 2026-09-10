@@ -1,0 +1,169 @@
+<h2 mat-dialog-title class="dialog-title">
+  Product Details
+</h2>
+
+<div mat-dialog-content class="dialog-content">
+
+  <!-- Product Images -->
+  <div class="product-images">
+
+    <h3>
+      Product Images
+    </h3>
+
+    <div class="image-grid">
+
+      <img
+        *ngFor="
+          let image of data.images
+        "
+        [src]="image"
+        alt="product-image">
+
+    </div>
+
+  </div>
+
+  <!-- Basic Details -->
+  <div class="details-card">
+
+    <h3>
+      Basic Information
+    </h3>
+
+    <div class="details-grid">
+
+      <div class="detail-item">
+        <span>Name</span>
+        <p>{{ data.name }}</p>
+      </div>
+
+      <div class="detail-item">
+        <span>Description</span>
+        <p>{{ data.description }}</p>
+      </div>
+
+      <div class="detail-item">
+        <span>Category</span>
+        <p>{{ data.category?.name }}</p>
+      </div>
+
+      <div class="detail-item">
+        <span>SubCategory</span>
+        <p>{{ data.subCategory?.name }}</p>
+      </div>
+
+      <div class="detail-item">
+        <span>SubSubCategory</span>
+        <p>{{ data.subSubCategory?.name }}</p>
+      </div>
+
+      <div class="detail-item">
+        <span>Product Type</span>
+        <p>{{ data.productType }}</p>
+      </div>
+
+      <div class="detail-item">
+        <span>Status</span>
+        <p>
+          {{
+            data.isActive
+            ? 'Active'
+            : 'Inactive'
+          }}
+        </p>
+      </div>
+
+      <div class="detail-item">
+        <span>Created At</span>
+        <p>{{ data.createdAt }}</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Variant Section -->
+  <div class="variant-section">
+
+    <h3>
+      Product Variants
+    </h3>
+
+    <div
+      *ngFor="
+        let variant of data.variants;
+        let i = index
+      "
+      class="variant-card">
+
+      <h4>
+        Variant {{ i + 1 }}
+      </h4>
+
+      <div class="variant-grid">
+
+        <div class="detail-item">
+          <span>Size</span>
+          <p>{{ variant.size }}</p>
+        </div>
+
+        <div class="detail-item">
+          <span>Weight</span>
+          <p>{{ variant.weight }}</p>
+        </div>
+
+        <div class="detail-item">
+          <span>Making Charges</span>
+          <p>{{ variant.makingCharges }}</p>
+        </div>
+
+        <div class="detail-item">
+          <span>Diamond Price</span>
+          <p>{{ variant.diamondPrice }}</p>
+        </div>
+
+        <div class="detail-item">
+          <span>Base Price</span>
+          <p>{{ variant.basePrice }}</p>
+        </div>
+
+        <div class="detail-item">
+          <span>Discount %</span>
+          <p>{{ variant.discountPercentage }}</p>
+        </div>
+
+        <div class="detail-item">
+          <span>Stock</span>
+          <p>{{ variant.stock }}</p>
+        </div>
+
+        <div class="detail-item">
+          <span>Gold Cost</span>
+          <p>{{ variant.goldCost }}</p>
+        </div>
+
+        <div class="detail-item">
+          <span>Total Price</span>
+          <p>{{ variant.totalPrice }}</p>
+        </div>
+
+        <div class="detail-item">
+          <span>Final Price</span>
+          <p>{{ variant.finalPrice }}</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div mat-dialog-actions class="button-group">
+
+ <button mat-button [mat-dialog-close]="false"  class="btn-back">
+  Close
+</button>
+</div>

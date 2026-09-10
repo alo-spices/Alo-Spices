@@ -1,0 +1,680 @@
+<!-- ================= RETAILER LIST PAGE ================= -->
+
+<section class="retailer-page">
+
+    <div class="container-fluid">
+
+        <!-- ================= PAGE HEADER ================= -->
+
+        <div class="page-header">
+
+            <div>
+
+                <h2>Retailer Shops</h2>
+
+                <p>
+                    Manage retailer & wholesaler shop visits
+                </p>
+
+            </div>
+
+            <div class="header-actions">
+
+                <button class="filter-btn">
+
+                    <i class="fas fa-filter"></i>
+                    Filters
+
+                </button>
+
+                <button class="add-shop-btn" data-bs-toggle="modal" data-bs-target="#addRetailerModal">
+
+                    <i class="fas fa-plus"></i>
+                    Add New Shop
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================= TOP SUMMARY ================= -->
+
+        <div class="row g-4 mb-4">
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon orange">
+
+                        <i class="fas fa-store"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>248</h3>
+                        <p>Total Shops</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon green">
+
+                        <i class="fas fa-check-circle"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>18</h3>
+                        <p>Visited Today</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon gold">
+
+                        <i class="fas fa-map-marker-alt"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>6</h3>
+                        <p>Pending Visits</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon red">
+
+                        <i class="fas fa-money-bill-wave"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>₹48K</h3>
+                        <p>Outstanding</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= SEARCH & FILTER ================= -->
+
+        <div class="toolbar-section">
+
+            <div class="search-box">
+
+                <i class="fas fa-search"></i>
+
+                <input type="text" placeholder="Search shop name, owner, area...">
+
+            </div>
+
+            <div class="toolbar-actions">
+
+                <select>
+
+                    <option>
+                        All Areas
+                    </option>
+
+                    <option>
+                        Vijayawada
+                    </option>
+
+                    <option>
+                        Guntur
+                    </option>
+
+                </select>
+
+                <select>
+
+                    <option>
+                        Visit Status
+                    </option>
+
+                    <option>
+                        Visited
+                    </option>
+
+                    <option>
+                        Pending
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- ================= RETAILER LIST ================= -->
+
+        <div class="row g-4">
+
+            <!-- ================= SHOP CARD ================= -->
+
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="shop-card">
+
+                    <!-- TOP -->
+
+                    <div class="shop-top">
+
+                        <div class="shop-profile">
+
+                            <div class="shop-avatar">
+
+                                <i class="fas fa-store"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h3>RK Kirana Stores</h3>
+
+                                <p>
+                                    Vijayawada
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <span class="status-badge success">
+
+                            Visited
+
+                        </span>
+
+                    </div>
+
+                    <!-- INFO -->
+
+                    <div class="shop-info">
+
+                        <div class="info-row">
+
+                            <span>
+                                Owner
+                            </span>
+
+                            <h5>
+                                Ramesh Kumar
+                            </h5>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>
+                                Mobile
+                            </span>
+
+                            <h5>
+                                +91 98765 43210
+                            </h5>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>
+                                Outstanding
+                            </span>
+
+                            <h5 class="danger-text">
+                                ₹12,420
+                            </h5>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>
+                                Last Order
+                            </span>
+
+                            <h5>
+                                ₹4,820
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ACTIONS -->
+
+                    <div class="shop-actions">
+
+                        <button type="button" class="visit-btn" (click)="startVisit()">
+
+                            <i class="fas fa-map-marker-alt"></i>
+                            Start Visit
+
+                        </button>
+
+                        <button class="order-btn">
+
+                            <i class="fas fa-shopping-cart"></i>
+                            Take Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= SHOP CARD ================= -->
+
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="shop-card">
+
+                    <div class="shop-top">
+
+                        <div class="shop-profile">
+
+                            <div class="shop-avatar">
+
+                                <i class="fas fa-store"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h3>Venkateswara Traders</h3>
+
+                                <p>
+                                    Guntur
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <span class="status-badge warning">
+
+                            Pending
+
+                        </span>
+
+                    </div>
+
+                    <div class="shop-info">
+
+                        <div class="info-row">
+
+                            <span>
+                                Owner
+                            </span>
+
+                            <h5>
+                                Srinivas
+                            </h5>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>
+                                Mobile
+                            </span>
+
+                            <h5>
+                                +91 99887 66554
+                            </h5>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>
+                                Outstanding
+                            </span>
+
+                            <h5 class="danger-text">
+                                ₹8,240
+                            </h5>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>
+                                Last Order
+                            </span>
+
+                            <h5>
+                                ₹2,100
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="shop-actions">
+
+                        <button type="button" class="visit-btn" (click)="startVisit()">
+
+                            <i class="fas fa-map-marker-alt"></i>
+                            Start Visit
+
+                        </button>
+
+                        <button class="order-btn">
+
+                            <i class="fas fa-shopping-cart"></i>
+                            Take Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= SHOP CARD ================= -->
+
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="shop-card">
+
+                    <div class="shop-top">
+
+                        <div class="shop-profile">
+
+                            <div class="shop-avatar">
+
+                                <i class="fas fa-store"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h3>Sai Wholesale Mart</h3>
+
+                                <p>
+                                    Hyderabad
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <span class="status-badge success">
+
+                            Active
+
+                        </span>
+
+                    </div>
+
+                    <div class="shop-info">
+
+                        <div class="info-row">
+
+                            <span>
+                                Owner
+                            </span>
+
+                            <h5>
+                                Naresh
+                            </h5>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>
+                                Mobile
+                            </span>
+
+                            <h5>
+                                +91 90000 11223
+                            </h5>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>
+                                Outstanding
+                            </span>
+
+                            <h5 class="danger-text">
+                                ₹18,600
+                            </h5>
+
+                        </div>
+
+                        <div class="info-row">
+
+                            <span>
+                                Last Order
+                            </span>
+
+                            <h5>
+                                ₹8,400
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="shop-actions">
+
+                        <button type="button" class="visit-btn" (click)="startVisit()">
+
+                            <i class="fas fa-map-marker-alt"></i>
+                            Start Visit
+
+                        </button>
+
+                        <button class="order-btn">
+
+                            <i class="fas fa-shopping-cart"></i>
+                            Take Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ADD SHOP MODAL ================= -->
+
+<div class="modal fade" id="addRetailerModal" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+
+        <div class="modal-content custom-modal">
+
+            <!-- HEADER -->
+
+            <div class="modal-header custom-modal-header">
+
+                <div>
+
+                    <h3>Add New Retailer Shop</h3>
+
+                    <p>
+                        Register new retailer / wholesaler
+                    </p>
+
+                </div>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <!-- BODY -->
+
+            <div class="modal-body">
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <label>
+                            Shop Name
+                        </label>
+
+                        <input type="text" placeholder="Enter shop name">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label>
+                            Owner Name
+                        </label>
+
+                        <input type="text" placeholder="Enter owner name">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label>
+                            Mobile Number
+                        </label>
+
+                        <input type="text" placeholder="Enter mobile number">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label>
+                            Shop Type
+                        </label>
+
+                        <select>
+
+                            <option>
+                                Retailer
+                            </option>
+
+                            <option>
+                                Wholesaler
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label>
+                            Area
+                        </label>
+
+                        <select>
+
+                            <option>
+                                Select Area
+                            </option>
+
+                            <option>
+                                Vijayawada
+                            </option>
+
+                            <option>
+                                Guntur
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label>
+                            GST Number
+                        </label>
+
+                        <input type="text" placeholder="Enter GST number">
+
+                    </div>
+
+                    <div class="col-12">
+
+                        <label>
+                            Address
+                        </label>
+
+                        <textarea placeholder="Enter shop address"></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->
+
+            <div class="modal-footer custom-footer">
+
+                <button class="cancel-btn" data-bs-dismiss="modal">
+
+                    Cancel
+
+                </button>
+
+                <button class="save-btn">
+
+                    Save Shop
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

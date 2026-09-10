@@ -1,0 +1,526 @@
+/* ================= PAGE ================= */
+
+.visit-page {
+    padding: 24px;
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+.visit-header {
+    background: white;
+    border-radius: 28px;
+    padding: 24px 28px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    gap: 20px;
+}
+
+.visit-shop-info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.shop-logo {
+    width: 76px;
+    height: 76px;
+    border-radius: 24px;
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.title-row h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.visit-shop-info p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* ================= LIVE BADGE ================= */
+
+.live-badge {
+    background: rgba(46, 125, 50, 0.12);
+    color: var(--success-color);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.live-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--success-color);
+}
+
+/* ================= HEADER BUTTONS ================= */
+
+.visit-header-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.header-btn {
+    height: 54px;
+    border-radius: 16px;
+    border: none;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.location-btn {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.call-btn {
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    color: white;
+}
+
+/* ================= STATUS CARD ================= */
+
+.status-card {
+    background: white;
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 100%;
+}
+
+.status-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.orange {
+    background: linear-gradient(135deg, #A63D22, #C45A3A);
+}
+
+.green {
+    background: linear-gradient(135deg, #2E7D32, #43A047);
+}
+
+.gold {
+    background: linear-gradient(135deg, #ED6C02, #ff9800);
+}
+
+.red {
+    background: linear-gradient(135deg, #D32F2F, #ef5350);
+}
+
+.status-card h3 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.status-card p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+/* ================= COMMON CARD ================= */
+
+.visit-card {
+    background: white;
+    border-radius: 28px;
+    padding: 28px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+}
+
+.card-header-custom {
+    margin-bottom: 28px;
+}
+
+.card-header-custom h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-header-custom p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+/* ================= ACTION CARD ================= */
+
+.action-card {
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.primary-action {
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    color: white;
+}
+
+.secondary-action {
+    background: linear-gradient(135deg,
+            #2E7D32,
+            #43A047);
+    color: white;
+}
+
+.light-action {
+    background: var(--bg-color);
+}
+
+.action-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.light-action .action-icon {
+    background: white;
+    color: var(--primary-color);
+}
+
+.action-content {
+    flex: 1;
+}
+
+.action-content h4 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.action-content p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+.action-btn {
+    min-width: 100px;
+    height: 48px;
+    border-radius: 14px;
+    border: none;
+    background: rgba(255, 255, 255, 0.18);
+    color: inherit;
+    font-weight: 600;
+}
+
+.light-action .action-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* ================= ORDER HISTORY ================= */
+
+.order-history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.history-item {
+    background: var(--bg-color);
+    border-radius: 22px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.history-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.history-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background: white;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.history-left h4 {
+    margin-bottom: 6px;
+}
+
+.history-left p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.history-right {
+    text-align: right;
+}
+
+.history-right h5 {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.history-right span {
+    color: var(--text-secondary);
+}
+
+/* ================= TIMER ================= */
+
+.timer-section {
+    text-align: center;
+}
+
+.timer-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 28px;
+    background:
+        conic-gradient(var(--primary-color) 0deg,
+            var(--primary-light) 240deg,
+            var(--secondary-color) 240deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.timer-circle::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: white;
+}
+
+.timer-circle h2,
+.timer-circle p {
+    position: relative;
+    z-index: 10;
+}
+
+.timer-circle h2 {
+    font-size: 42px;
+    margin-bottom: 6px;
+}
+
+.timer-circle p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.timer-section h4 {
+    margin-bottom: 10px;
+}
+
+.timer-section span {
+    color: var(--text-secondary);
+}
+
+/* ================= DETAILS ================= */
+
+.details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail-row span {
+    color: var(--text-secondary);
+}
+
+.detail-row h5 {
+    margin: 0;
+}
+
+/* ================= COMPLETE VISIT ================= */
+
+.complete-visit-box {
+    text-align: center;
+}
+
+.complete-visit-box h3 {
+    margin-bottom: 14px;
+}
+
+.complete-visit-box p {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+.complete-btn {
+    width: 100%;
+    height: 60px;
+    border-radius: 18px;
+    border: none;
+    background: linear-gradient(135deg,
+            #2E7D32,
+            #43A047);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 991px) {
+
+    .visit-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .visit-header-actions {
+        width: 100%;
+    }
+
+    .header-btn {
+        flex: 1;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 767px) {
+
+    .visit-page {
+        padding: 16px;
+    }
+
+    .visit-header {
+        padding: 22px;
+    }
+
+    .shop-logo {
+        width: 62px;
+        height: 62px;
+        font-size: 24px;
+    }
+
+    .title-row h2 {
+        font-size: 24px;
+    }
+
+    .status-card {
+        padding: 20px;
+    }
+
+    .visit-card {
+        padding: 22px;
+    }
+
+    .action-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .action-btn {
+        width: 100%;
+    }
+
+    .history-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .history-right {
+        text-align: left;
+    }
+
+    .timer-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .timer-circle::before {
+        width: 115px;
+        height: 115px;
+    }
+
+}
+
+@media(max-width: 480px) {
+
+    .visit-shop-info {
+        align-items: flex-start;
+    }
+
+    .visit-header-actions {
+        flex-direction: column;
+    }
+
+    .header-btn {
+        width: 100%;
+    }
+
+    .title-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

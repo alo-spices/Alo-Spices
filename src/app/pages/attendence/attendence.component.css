@@ -1,0 +1,564 @@
+/* ================= PAGE ================= */
+
+.attendance-page {
+    padding: 24px;
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+.attendance-header {
+    background: white;
+    border-radius: 28px;
+    padding: 24px 28px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    gap: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.attendance-icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 24px;
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.header-left h2 {
+    font-size: 34px;
+    margin-bottom: 6px;
+}
+
+.header-left p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.date-box {
+    height: 54px;
+    padding: 0 22px;
+    border-radius: 16px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+/* ================= STATUS CARD ================= */
+
+.attendance-status-card {
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    border-radius: 32px;
+    padding: 32px;
+    margin-bottom: 28px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.success-badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px 18px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+.status-left h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.status-left p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+.timer-box {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 28px;
+    padding: 26px 36px;
+    text-align: center;
+}
+
+.timer-box h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.timer-box span {
+    opacity: 0.9;
+}
+
+/* ================= SUMMARY ================= */
+
+.summary-card {
+    background: white;
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 100%;
+}
+
+.summary-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.green {
+    background: linear-gradient(135deg, #2E7D32, #43A047);
+}
+
+.red {
+    background: linear-gradient(135deg, #D32F2F, #ef5350);
+}
+
+.gold {
+    background: linear-gradient(135deg, #ED6C02, #ff9800);
+}
+
+.orange {
+    background: linear-gradient(135deg, #A63D22, #C45A3A);
+}
+
+.summary-card h3 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.summary-card p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+/* ================= COMMON CARD ================= */
+
+.attendance-card {
+    background: white;
+    border-radius: 28px;
+    padding: 28px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+}
+
+.card-header-custom {
+    margin-bottom: 28px;
+}
+
+.card-header-custom h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-header-custom p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+/* ================= ACTION CARD ================= */
+
+.action-card {
+    background: var(--bg-color);
+    border-radius: 24px;
+    padding: 28px;
+    text-align: center;
+    height: 100%;
+}
+
+.active-action {
+    background: linear-gradient(135deg,
+            #2E7D32,
+            #43A047);
+    color: white;
+}
+
+.action-icon {
+    width: 82px;
+    height: 82px;
+    border-radius: 24px;
+    margin: auto;
+    margin-bottom: 22px;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+
+.action-card h3 {
+    margin-bottom: 12px;
+}
+
+.action-card p {
+    margin-bottom: 24px;
+    opacity: 0.9;
+}
+
+.action-card button {
+    width: 100%;
+    height: 56px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 600;
+}
+
+.active-action button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.checkout-btn {
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    color: white;
+}
+
+/* ================= PROOF ================= */
+
+.proof-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.proof-box {
+    background: var(--bg-color);
+    border-radius: 24px;
+    padding: 24px;
+    text-align: center;
+}
+
+.proof-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 22px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 54px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.map-bg {
+    background: linear-gradient(135deg,
+            var(--secondary-color),
+            white);
+}
+
+.proof-box h4 {
+    margin-bottom: 10px;
+}
+
+.proof-box p {
+    color: var(--text-secondary);
+    margin-bottom: 22px;
+}
+
+.proof-box button {
+    height: 52px;
+    border-radius: 16px;
+    border: none;
+    padding: 0 22px;
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+/* ================= HISTORY ================= */
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.history-item {
+    background: var(--bg-color);
+    border-radius: 22px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.history-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.history-date {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    background: white;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.history-left h4 {
+    margin-bottom: 6px;
+}
+
+.history-left p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.history-center {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-secondary);
+}
+
+.present-badge {
+    background: rgba(46, 125, 50, 0.12);
+    color: var(--success-color);
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ================= PERFORMANCE ================= */
+
+.performance-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.performance-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.performance-item span {
+    color: var(--text-secondary);
+}
+
+.performance-item h4 {
+    margin: 0;
+}
+
+.warning-text {
+    color: var(--warning-color);
+}
+
+.green-text {
+    color: var(--success-color);
+}
+
+/* ================= WORK STATUS ================= */
+
+.work-status-box {
+    text-align: center;
+}
+
+.work-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 26px;
+    margin: auto;
+    margin-bottom: 22px;
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+}
+
+.work-status-box h3 {
+    margin-bottom: 12px;
+}
+
+.work-status-box p {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+.progress-bar-custom {
+    width: 100%;
+    height: 16px;
+    border-radius: 50px;
+    background: var(--secondary-color);
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.progress-fill {
+    width: 66%;
+    height: 100%;
+    background: linear-gradient(135deg,
+            #2E7D32,
+            #43A047);
+}
+
+.work-status-box span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* ================= BUTTONS ================= */
+
+.route-btn,
+.report-btn {
+    width: 100%;
+    height: 58px;
+    border-radius: 18px;
+    border: none;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.route-btn {
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    color: white;
+}
+
+.report-btn {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 991px) {
+
+    .attendance-header,
+    .attendance-status-card,
+    .history-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .proof-section {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media(max-width: 767px) {
+
+    .attendance-page {
+        padding: 16px;
+    }
+
+    .attendance-header {
+        padding: 22px;
+    }
+
+    .attendance-icon {
+        width: 62px;
+        height: 62px;
+        font-size: 24px;
+    }
+
+    .header-left h2 {
+        font-size: 28px;
+    }
+
+    .attendance-status-card {
+        padding: 24px;
+    }
+
+    .status-left h2 {
+        font-size: 28px;
+    }
+
+    .timer-box {
+        width: 100%;
+    }
+
+    .timer-box h1 {
+        font-size: 34px;
+    }
+
+    .summary-card {
+        padding: 20px;
+    }
+
+    .summary-card h3 {
+        font-size: 24px;
+    }
+
+    .attendance-card {
+        padding: 22px;
+    }
+
+    .proof-image {
+        height: 180px;
+    }
+
+}
+
+@media(max-width: 480px) {
+
+    .header-left {
+        align-items: flex-start;
+    }
+
+    .history-center {
+        flex-wrap: wrap;
+    }
+
+}

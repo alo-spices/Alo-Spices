@@ -1,0 +1,86 @@
+/* ========== */
+:root {
+
+  /* Main Brand Colors */
+  --primary-color: #A63D22;
+  --primary-dark: #8F2E24;
+  --primary-light: #8C2E00;
+
+  /* Secondary */
+  --secondary-color: #D8C49A;
+  --secondary-dark: #D8C2B1;
+
+  /* Backgrounds */
+  --bg-color: #F8F5F2;
+  --card-bg: #FFFFFF;
+  --sidebar-bg: #1E1A17;
+
+
+  /* Text Colors */
+
+  --text-primary: #4B4B2D;
+  --text-sendh2: #C88716;
+  --text-secondary: #6B6B6B;
+  --text-light: #F5F5F5;
+
+
+  /* Borders */
+  --border-color: #E4D8CF;
+
+  /* Status Colors */
+  --success-color: #2E7D32;
+  --warning-color: #ED6C02;
+  --danger-color: #D32F2F;
+  --info-color: #0288D1;
+  --second-colour: #c89b3c;
+
+  /* Hover Effects */
+  --hover-color: #8F341C;
+
+  /* Shadows */
+  --shadow-light: rgba(0, 0, 0, 0.08);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+
+}
+
+/* google-fonts */
+body,
+button,
+input,
+textarea,
+select,
+span,
+div,
+p,
+
+
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+td,
+th {
+
+  /* font-family: "SUSE Mono", sans-serif !important; */
+
+  /* font-family: "Lexend Mega", sans-serif !important; */
+  /* font-family: "Prosto One", sans-serif !important; */
+  /* font-family: "Ysabeau Office", sans-serif !important; */
+
+  font-family: 'Manrope', sans-serif !important;
+}
+
+/* h2{
+  font-weight: 700px;
+} */
+body {
+  font-family: 'cormorant Garamond' !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

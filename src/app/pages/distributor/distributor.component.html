@@ -1,0 +1,135 @@
+<div class="container-fluid distributor-container">
+
+    <!-- Hero Banner -->
+
+    <div class="title-area">
+
+        <span>HOW IT WORKS</span>
+
+        <h2>Become A Distributor</h2>
+
+        <p>
+            Join us in our mission to bring quality spices
+            to every corner of India.
+        </p>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="container distributor-grid">
+
+        <!-- Left Side Benefits -->
+
+        <div class="benefits-section">
+
+            <div class="benefit-card" data-aos="fade-left">
+
+                <i class="fas fa-handshake"></i>
+
+                <div>
+                    <h4>Trusted Distributor</h4>
+
+                    <p>
+                        Join a growing network of distributors
+                        across India.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="benefit-card" data-aos="fade-left">
+
+                <i class="fas fa-chart-line"></i>
+
+                <div>
+                    <h4>High Margins</h4>
+
+                    <p>
+                        Competitive pricing with attractive
+                        profit margins.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="benefit-card" data-aos="fade-left">
+
+                <i class="fas fa-map-location-dot"></i>
+
+                <div>
+                    <h4>Territory Rights</h4>
+
+                    <p>
+                        Exclusive distribution rights
+                        in your area.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="benefit-card" data-aos="fade-left">
+
+                <i class="fas fa-headset"></i>
+
+                <div>
+                    <h4>Dedicated Support</h4>
+
+                    <p>
+                        24/7 support and marketing
+                        assistance.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Inquiry Form -->
+
+        <div class="inquiry-card">
+
+            <h3>Distributor Inquiry Form</h3>
+
+            <form [formGroup]="inquiryForm" (ngSubmit)="onSubmit()">
+
+                <div class="form-group">
+                    <input
+                        type="text"
+                        placeholder="Full Name"
+                        formControlName="fullName">
+                </div>
+
+                <div class="form-group">
+                    <input
+                        type="tel"
+                        placeholder="Phone Number"
+                        formControlName="phoneNumber">
+                </div>
+
+                <div class="form-group">
+                    <input
+                        type="text"
+                        placeholder="Location"
+                        formControlName="location">
+                </div>
+
+                <div class="form-group">
+                    <textarea
+                        rows="5"
+                        placeholder="Message"
+                        formControlName="message">
+                    </textarea>
+                </div>
+
+                <button type="submit">
+                    Submit Inquiry
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

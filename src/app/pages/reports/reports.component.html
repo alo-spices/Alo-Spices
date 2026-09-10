@@ -1,0 +1,648 @@
+<!-- ================= REPORTS PAGE ================= -->
+
+<section class="reports-page">
+
+    <div class="container-fluid">
+
+        <!-- ================= PAGE HEADER ================= -->
+
+        <div class="reports-header">
+
+            <!-- LEFT -->
+
+            <div class="header-left">
+
+                <div class="reports-icon">
+
+                    <i class="fas fa-chart-line"></i>
+
+                </div>
+
+                <div>
+
+                    <h2>Reports & Analytics</h2>
+
+                    <p>
+                        Sales, collections & field performance insights
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="header-right">
+
+                <button class="filter-btn">
+
+                    <i class="fas fa-filter"></i>
+                    Filters
+
+                </button>
+
+                <button class="download-btn">
+
+                    <i class="fas fa-download"></i>
+                    Export Report
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================= FILTER BAR ================= -->
+
+        <div class="filter-bar">
+
+            <div class="filter-group">
+
+                <label>
+                    Date Range
+                </label>
+
+                <select>
+
+                    <option>
+                        Today
+                    </option>
+
+                    <option>
+                        This Week
+                    </option>
+
+                    <option>
+                        This Month
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="filter-group">
+
+                <label>
+                    Area
+                </label>
+
+                <select>
+
+                    <option>
+                        All Areas
+                    </option>
+
+                    <option>
+                        Vijayawada
+                    </option>
+
+                    <option>
+                        Guntur
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="filter-group">
+
+                <label>
+                    Salesman
+                </label>
+
+                <select>
+
+                    <option>
+                        All Employees
+                    </option>
+
+                    <option>
+                        Anil Kumar
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- ================= SUMMARY ================= -->
+
+        <div class="row g-4 mb-4">
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon orange">
+
+                        <i class="fas fa-shopping-cart"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>₹4.8L</h3>
+                        <p>Total Sales</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon green">
+
+                        <i class="fas fa-money-bill-wave"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>₹2.1L</h3>
+                        <p>Collections</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon gold">
+
+                        <i class="fas fa-store"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>182</h3>
+                        <p>Visited Shops</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon red">
+
+                        <i class="fas fa-route"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>91%</h3>
+                        <p>Route Efficiency</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= CHARTS ================= -->
+
+        <div class="row g-4">
+
+            <!-- SALES CHART -->
+
+            <div class="col-xl-8">
+
+                <div class="report-card">
+
+                    <div class="card-header-custom">
+
+                        <div>
+
+                            <h3>Sales Performance</h3>
+
+                            <p>
+                                Weekly order booking analytics
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chart-container">
+
+                        <canvas #lineChart></canvas>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- COLLECTION STATUS -->
+
+            <div class="col-xl-4">
+
+                <div class="report-card">
+
+                    <div class="card-header-custom">
+
+                        <div>
+
+                            <h3>Collection Ratio</h3>
+
+                            <p>
+                                Paid vs pending outstanding
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chart-container donut-chart">
+
+                        <canvas #donutChart></canvas>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= SECOND ROW ================= -->
+
+        <div class="row g-4 mt-1">
+
+            <!-- EMPLOYEE PERFORMANCE -->
+
+            <div class="col-xl-7">
+
+                <div class="report-card">
+
+                    <div class="card-header-custom">
+
+                        <div>
+
+                            <h3>Employee Performance</h3>
+
+                            <p>
+                                Daily visit & order completion
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="employee-performance-list">
+
+                        <!-- ITEM -->
+
+                        <div class="employee-item">
+
+                            <div class="employee-left">
+
+                                <div class="employee-avatar">
+
+                                    AK
+
+                                </div>
+
+                                <div>
+
+                                    <h4>Anil Kumar</h4>
+
+                                    <p>
+                                        Vijayawada Route
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="employee-stats">
+
+                                <div>
+
+                                    <h5>18</h5>
+                                    <span>Visits</span>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>₹82K</h5>
+                                    <span>Sales</span>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>92%</h5>
+                                    <span>Efficiency</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- ITEM -->
+
+                        <div class="employee-item">
+
+                            <div class="employee-left">
+
+                                <div class="employee-avatar">
+
+                                    SK
+
+                                </div>
+
+                                <div>
+
+                                    <h4>Suresh Kumar</h4>
+
+                                    <p>
+                                        Guntur Route
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="employee-stats">
+
+                                <div>
+
+                                    <h5>15</h5>
+                                    <span>Visits</span>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>₹64K</h5>
+                                    <span>Sales</span>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>86%</h5>
+                                    <span>Efficiency</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- QUICK REPORTS -->
+
+            <div class="col-xl-5">
+
+                <div class="report-card">
+
+                    <div class="card-header-custom">
+
+                        <div>
+
+                            <h3>Quick Reports</h3>
+
+                            <p>
+                                Download important reports
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="quick-report-list">
+
+                        <div class="quick-report-item">
+
+                            <div class="report-info">
+
+                                <div class="report-icon-box orange-bg">
+
+                                    <i class="fas fa-file-invoice"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h4>Sales Report</h4>
+
+                                    <p>
+                                        Daily & monthly sales
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <button>
+
+                                Download
+
+                            </button>
+
+                        </div>
+
+                        <div class="quick-report-item">
+
+                            <div class="report-info">
+
+                                <div class="report-icon-box green-bg">
+
+                                    <i class="fas fa-wallet"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h4>Collection Report</h4>
+
+                                    <p>
+                                        Outstanding collections
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <button>
+
+                                Download
+
+                            </button>
+
+                        </div>
+
+                        <div class="quick-report-item">
+
+                            <div class="report-info">
+
+                                <div class="report-icon-box red-bg">
+
+                                    <i class="fas fa-user-check"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h4>Attendance Report</h4>
+
+                                    <p>
+                                        Employee attendance
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <button>
+
+                                Download
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= SALES TABLE ================= -->
+
+        <div class="report-card mt-4">
+
+            <div class="card-header-custom">
+
+                <div>
+
+                    <h3>Top Retailer Sales</h3>
+
+                    <p>
+                        Highest performing retailer shops
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="table-responsive">
+
+                <table class="custom-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Shop Name</th>
+                            <th>Area</th>
+                            <th>Total Orders</th>
+                            <th>Collections</th>
+                            <th>Outstanding</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>RK Kirana Stores</td>
+                            <td>Vijayawada</td>
+                            <td>₹82,400</td>
+                            <td>₹54,000</td>
+                            <td>₹28,400</td>
+
+                            <td>
+
+                                <span class="status-badge success">
+
+                                    Active
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Sai Wholesale Mart</td>
+                            <td>Guntur</td>
+                            <td>₹64,800</td>
+                            <td>₹41,200</td>
+                            <td>₹23,600</td>
+
+                            <td>
+
+                                <span class="status-badge pending">
+
+                                    Pending
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Balaji Super Market</td>
+                            <td>Hyderabad</td>
+                            <td>₹48,000</td>
+                            <td>₹38,000</td>
+                            <td>₹10,000</td>
+
+                            <td>
+
+                                <span class="status-badge success">
+
+                                    Active
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

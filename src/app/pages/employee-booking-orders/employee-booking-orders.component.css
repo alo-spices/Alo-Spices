@@ -1,0 +1,487 @@
+/* ================= PAGE ================= */
+
+.employee-order-page {
+    padding: 24px;
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+
+/* ================= TOPBAR ================= */
+
+.page-topbar {
+    background: var(--card-bg);
+    border-radius: 28px;
+    padding: 24px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+    gap: 20px;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.shop-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 22px;
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+}
+
+.left-content h2 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.left-content p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.right-content {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.top-btn {
+    height: 52px;
+    padding: 0 22px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ================= SUMMARY ================= */
+
+.summary-card {
+    background: var(--card-bg);
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+    height: 100%;
+}
+
+.summary-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.orange {
+    background: linear-gradient(135deg, #A63D22, #C45A3A);
+}
+
+.green {
+    background: linear-gradient(135deg, #2E7D32, #43A047);
+}
+
+.gold {
+    background: linear-gradient(135deg, #ED6C02, #ff9800);
+}
+
+.red {
+    background: linear-gradient(135deg, #D32F2F, #ef5350);
+}
+
+.summary-card h3 {
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.summary-card p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+/* ================= CONTENT CARD ================= */
+
+.content-card {
+    background: var(--card-bg);
+    border-radius: 28px;
+    padding: 28px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-light);
+}
+
+.card-header-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    gap: 20px;
+}
+
+.card-header-custom h3 {
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.card-header-custom p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* ================= SEARCH ================= */
+
+.search-box {
+    width: 320px;
+    height: 54px;
+    background: var(--bg-color);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    gap: 12px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* ================= PRODUCT CARD ================= */
+
+.product-card {
+    background: var(--bg-color);
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.stock-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.product-content {
+    padding: 22px;
+}
+
+.product-content h4 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.product-content p {
+    color: var(--text-secondary);
+    margin-bottom: 18px;
+}
+
+.product-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-price-row h3 {
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.product-price-row span {
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+/* ================= QUANTITY ================= */
+
+.qty-section {
+    height: 54px;
+    background: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.qty-section button {
+    width: 60px;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+}
+
+.qty-section input {
+    flex: 1;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ================= ADD BUTTON ================= */
+
+.add-cart-btn {
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* ================= ORDER SUMMARY ================= */
+
+.sticky-summary {
+    position: sticky;
+    top: 100px;
+}
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 18px;
+    border-radius: 18px;
+}
+
+.order-item h4 {
+    margin-bottom: 6px;
+}
+
+.order-item p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.bill-summary {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 22px 0;
+}
+
+.bill-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.total-row {
+    margin-top: 18px;
+}
+
+.total-row h3 {
+    color: var(--primary-color);
+    font-size: 34px;
+}
+
+/* ================= NOTES ================= */
+
+.notes-section {
+    margin-top: 28px;
+}
+
+.notes-section label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.notes-section textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 16px;
+    resize: none;
+    outline: none;
+}
+
+/* ================= ACTIONS ================= */
+
+.summary-actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.draft-btn,
+.confirm-btn {
+    flex: 1;
+    height: 58px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 600;
+}
+
+.draft-btn {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.confirm-btn {
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-light));
+    color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 1200px) {
+
+    .sticky-summary {
+        position: static;
+    }
+
+}
+
+@media(max-width: 991px) {
+
+    .page-topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-content {
+        width: 100%;
+    }
+
+    .top-btn {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .card-header-custom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 767px) {
+
+    .employee-order-page {
+        padding: 16px;
+    }
+
+    .left-content {
+        align-items: flex-start;
+    }
+
+    .shop-avatar {
+        width: 58px;
+        height: 58px;
+        font-size: 22px;
+    }
+
+    .left-content h2 {
+        font-size: 22px;
+    }
+
+    .summary-card {
+        padding: 20px;
+    }
+
+    .summary-card h3 {
+        font-size: 24px;
+    }
+
+    .content-card {
+        padding: 20px;
+    }
+
+    .card-header-custom h3 {
+        font-size: 22px;
+    }
+
+    .product-content h4 {
+        font-size: 20px;
+    }
+
+    .product-price-row h3 {
+        font-size: 26px;
+    }
+
+    .summary-actions {
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width: 480px) {
+
+    .hero-buttons,
+    .right-content {
+        flex-direction: column;
+    }
+
+    .top-btn {
+        width: 100%;
+    }
+
+    .product-image img {
+        height: 200px;
+    }
+
+}
